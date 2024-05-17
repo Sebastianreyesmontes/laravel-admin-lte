@@ -1,0 +1,52 @@
+.fc-daygrid-event {
+    border-radius: 2px !important;
+}
+
+
+.fc-event {
+    letter-spacing: .1rem;
+    /* font-weight: 600; */
+    /* padding: .1rem; */
+    font-family: 'Nunito', sans-serif;
+}
+
+.fc-daygrid-event.bg-warning .fc-event-title {
+    color: #000000 !important;
+}
+
+.fc-daygrid-event.bg-warning {
+    border-color:#ffc107 !important;
+}
+
+.fc-daygrid-event.bg-info {
+    border-color:#17a2b8 !important;
+}
+
+.fc-daygrid-event.bg-success {
+    border-color:#28a745 !important;
+}
+
+.fc-daygrid-event.bg-danger {
+    border-color:#dc3545 !important;
+}
+
+/* modal-eventos */
+.fc-color-picker li {
+    /* cursor: pointer;
+    transition: transform 0.3s ease; */
+    padding: 5px;
+}
+
+.fc-color-picker li.selected label i {
+    transform: rotate(30deg) !important;
+}
+
+/* botones-colores */
+ /* Estilo personalizado para los radio buttons */
+.form-check-input[type="radio"] {
+    display: none; /* Ocultar los radio buttons */
+}
+
+.form-check-label {
+    cursor: pointer;
+}

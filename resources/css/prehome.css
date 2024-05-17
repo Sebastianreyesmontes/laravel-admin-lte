@@ -1,0 +1,529 @@
+html {
+    font-size: 15px;
+}
+
+a {
+    text-decoration: none;
+}
+
+.hora-p {
+    padding: 12px;
+    font-size: larger;
+}
+
+.carousel-item {
+    background: #000 !important;
+    color: white !important;
+}
+
+.overlay-image {
+    opacity: 0.9;
+}
+
+.container {
+    min-height: 100vh;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.container-content {
+    max-width: 1200px; /* Ajusta el valor según el ancho máximo que desees para el contenido */
+    margin: 0 auto; /* Centra el contenido horizontalmente */
+    padding: 0 20px; /* Agrega un espacio de padding a los lados para evitar el desbordamiento */
+}
+
+.contenedor-main {
+    background: white !important;
+    width: 100%;
+}
+
+/*Fondo imagen titulo*/
+.container-title {
+    min-height: 40vh;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+}
+
+.container-title::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: #2071b2;
+    background-image: url("/public/imgs/aero2.jpg");
+    background-size: cover;
+    opacity: 0.1;
+    mix-blend-mode: multiply;
+}
+
+.text-container {
+    position: relative;
+    z-index: 1;
+    /* padding-top: 40vh; */
+}
+
+.text-container h1 {
+    color: #ffffff;
+    font-size: 48px;
+    font-weight: 600;
+    padding: 20px;
+    letter-spacing: 2px;
+    text-align: center;
+}
+
+.container-title2 {
+    min-height: 50vh;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+}
+
+.container-title2::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-image: url("/public/imgs/fondo-reseñah.JPG");
+    background-size: cover;
+    opacity: 0.4;
+}
+
+.container-title3 {
+    min-height: 50vh;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+}
+
+.container-title3::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 90%;
+    background-image: url("/public/imgs/fondo-noticias.png");
+    background-size: cover;
+    opacity: 0.4;
+}
+
+.container-title3::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 90%;
+    background-color: #278ee2; /* Color de fondo */
+    opacity: 0.7; /* Puedes ajustar la opacidad del color de fondo aquí */
+}
+
+/*Fin fondo imagen titulo*/
+
+/* Sección header*/
+.header {
+    position: fixed; /* Hace que el navbar quede fijo */
+    top: 0; /* Lo posiciona en la parte superior */
+    width: 100%; /* Ocupa el ancho completo */
+    z-index: 1000; /* Asegura que esté por encima de otros elementos */
+}
+
+#navbar {
+    position: fixed;
+    z-index: 1000;
+    left: 0;
+    top: 0;
+    width: 100vw;
+    height: auto;
+}
+
+#navbar .header {
+    min-height: 8vh !important;
+}
+
+#navbar .nav-bar {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.logo {
+    width: 68px;
+    height: 50px;
+    margin-left: 20px;
+    margin-right: 15px;
+}
+
+.text-logo {
+    font-size: 25px;
+    font-weight: 600;
+    color: rgb(35, 121, 235);
+    letter-spacing: 1px;
+}
+
+.nav-item {
+    letter-spacing: 0.1px;
+    margin-left: 50px;
+    margin-right: 10px;
+}
+
+.nav-link {
+    font-size: 15px;
+    font-weight: 500;
+    color: #383838;
+}
+
+.navbar ul li::after {
+    content: "";
+    width: 0%;
+    height: 2px;
+    background: rgb(35, 121, 235);
+    display: block;
+    margin: auto;
+    transition: 0.5s;
+}
+/*Al colocar en el width: 100% se ve la rayita*/
+
+.navbar ul li:hover::after {
+    width: 100%;
+}
+
+.navbar ul li a {
+    color: #535353 !important;
+}
+
+.navbar ul li a:hover {
+    color: rgb(35, 121, 235) !important;
+}
+
+/* Ajuste para pantallas pequeñas */
+@media (max-width: 1029px) {
+    .nav-item {
+        margin: 0 10px; /* Reducir los márgenes laterales */
+    }
+    .logo {
+        margin-left: 10px; /* Reducir el margen izquierdo */
+    }
+}
+
+/* Fin sección header */
+
+/*Sección inicio*/
+#inicio {
+    background-image: url(/public/imgs/20220308_141854.jpg);
+    background-size: cover;
+    background-position: top center;
+    position: relative;
+    z-index: 1;
+}
+
+#inicio::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    top: 0;
+    height: 100%;
+    width: 100%;
+    background-color: white;
+    opacity: 0.7;
+    z-index: -1;
+}
+
+#inicio h1 {
+    display: block;
+    width: fit-content;
+    font-size: 4rem;
+    position: relative;
+    color: rgb(59, 59, 59);
+}
+
+#inicio .inicio {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 50px;
+    justify-content: flex-start;
+}
+/*Fin sección inicio*/
+
+@media only screen and (min-width: 1207px) {
+    #header .navbar-collapse {
+        display: none !important;
+    }
+}
+
+.parrafo {
+    text-align: justify;
+    padding: 1rem;
+}
+
+.parrafo-l {
+    text-align: justify;
+    padding: 0 1rem 0 1rem;
+}
+
+.parrafo-puntos li {
+    margin: 1%;
+}
+
+.title-p {
+    text-align: center;
+    padding: 1rem;
+}
+
+.title-p2 {
+    text-align: start;
+    padding: 1rem;
+}
+
+/*.selector-for-some-widget {
+    box-sizing: content-box;
+}*/
+
+/* Sección noticias */
+/* Carrusel */
+
+.carousel-item img {
+    object-fit: cover;
+}
+
+.container-carousel {
+    width: 100%;
+    max-width: 100%;
+}
+
+.carousel1 {
+    margin-top: 20px;
+    /* Agrega cualquier otro estilo adicional que necesites para el carrusel */
+}
+
+.container-cards {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+.cards-2-col {
+    margin-bottom: 3rem;
+}
+
+.card1 .card2 {
+    width: 48%;
+    margin-bottom: 20px;
+}
+
+@media (max-width: 767px) {
+    .card1 {
+        width: 100%;
+    }
+}
+
+.menu-noticias {
+    width: 100%;
+    margin-top: 1rem;
+    justify-content: center;
+}
+
+.nav-tabs .nav-link {
+    letter-spacing: 2px;
+}
+
+.contenido-noticias-p1 {
+    margin-top: 3rem;
+    margin-bottom: 4rem;
+}
+
+.news-content {
+    text-align: justify;
+    font-size: medium;
+    margin-bottom: 4rem;
+}
+
+.image-container p {
+    font-size: small;
+    color: #383838;
+}
+
+.news-content p {
+    margin-bottom: 10px;
+}
+
+.news-title {
+    margin: 4rem;
+}
+
+.nav-menu {
+    margin: 1rem;
+    font-size: medium;
+}
+/* Fin noticias */
+
+/*Footer*/
+.container-footer {
+    max-width: 1200px; /* Ajusta el valor según el ancho máximo que desees para el contenido */
+    margin: 0 auto; /* Centra el contenido horizontalmente */
+    padding: 0 20px; /* Agrega un espacio de padding a los lados para evitar el desbordamiento */
+    box-sizing: border-box;
+}
+
+#footer {
+    background: rgb(247, 245, 245);
+    padding: 86px 0;
+    color: #000000;
+    padding-bottom: 20px !important;
+    padding-top: 50px !important;
+    /* overflow-x: hidden; Oculta el desbordamiento horizontal */
+}
+
+.text-footer {
+    padding: 0%;
+    font-size: 14px;
+    margin-top: 10px;
+    margin-bottom: 45px;
+}
+
+.media-icons {
+    margin-bottom: 3px;
+}
+
+.card-area {
+    color: #464545;
+}
+
+/* .container-footer {
+    min-height: 30vh;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+} */
+
+.single-content {
+    text-align: center;
+    padding-right: 0px !important;
+    padding-left: 0px !important;
+}
+
+.single-box p {
+    color: #383838;
+}
+.single-box h3 {
+    font-size: 16px;
+    font-weight: 700;
+}
+.single-box .card-area i {
+    color: #000000;
+    font-size: 20px;
+    margin-right: 10px;
+}
+.single-box ul {
+    list-style: none;
+    padding: 0;
+}
+.single-box ul li a {
+    text-decoration: none;
+    color: #000000;
+    line-height: 2.5;
+    font-weight: 100;
+}
+.single-box h2 {
+    font-size: 20px;
+    font-weight: 700;
+}
+
+.imgs-f {
+    margin-top: 30%;
+}
+/*Fin footer*/
+
+/*Botón subir*/
+.go-top-container {
+    position: fixed;
+    bottom: 4rem;
+    right: 4rem;
+    width: 4.5rem;
+    height: 4.5rem;
+    z-index: -1;
+}
+
+.go-top-button {
+    width: 0rem;
+    height: 0rem;
+    background: #2071b2;
+    border-radius: 50%;
+    cursor: pointer;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: -1;
+    position: relative;
+}
+
+.go-top-button svg {
+    position: absolute;
+    font-size: 1.7rem;
+    top: 48%;
+    left: 50%;
+    transform: translate(-50%, -50%) scale(3);
+    color: #fff;
+    transition: 0.2s;
+    z-index: -1;
+}
+
+.show {
+    z-index: 10;
+}
+
+.show .go-top-button {
+    animation: popup 0.3s ease-in-out;
+    width: 4.5rem;
+    height: 4.5rem;
+    z-index: 11;
+}
+
+.show i {
+    transform: translate(-50%, -50%) scale(1);
+}
+
+@media (max-width: 1029px) {
+    .go-top-container {
+        bottom: 2rem;
+        right: 2rem;
+        width: 3.6rem;
+        height: 3.6rem;
+    }
+}
+
+@keyframes popup {
+    0% {
+        width: 0rem;
+        height: 0rem;
+    }
+    50% {
+        width: 6rem;
+        height: 6rem;
+    }
+    100% {
+        width: 4.5rem;
+        height: 4.5rem;
+    }
+}
+
+.modal {
+    z-index: 1050;
+}
